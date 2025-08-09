@@ -1,18 +1,14 @@
-participantes = []
-def AgregarParticipantes():
-    while True:
-        dorsal = input("Ingrese el numero de dorsal: ")
+class Participante:
+    def __init__(self, dorsal, nombre, edad, categoria):
+        self.dorsal = dorsal
+        self.nombre = nombre
+        self.edad = edad
+        self.categoria = categoria
 
-        nombre = input("Ingrese el nombre completo: ")
-        edad = input("Ingrese la edad: ")
-        categoria = input("Ingrese la categoria (Juvenil,Adulto,Master): ")
+        class Carrera:
+            def __init__(self):
+                self.participantes = []
 
-        participantes.append({
-            'dorsal' : dorsal,
-            'nombre' : nombre,
-            'edad' : edad,
-            'categoria' : categoria
-        })
 
 print("*******MENU DE OPCIONES*******")
 print("1. Agregar participante")
